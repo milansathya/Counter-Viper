@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "AppDependencies.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) AppDependencies *appDependencies;
 
 @end
 
@@ -16,7 +19,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.appDependencies = [[AppDependencies alloc] init];
+    [self.appDependencies presentCounterViewFromWindow:self.window];
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

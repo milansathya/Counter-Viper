@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		192A3F061FE60BE100C09049 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 192A3F051FE60BE100C09049 /* AppDelegate.m */; };
-		192A3F091FE60BE100C09049 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192A3F081FE60BE100C09049 /* ViewController.m */; };
+		192A3F091FE60BE100C09049 /* CounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192A3F081FE60BE100C09049 /* CounterViewController.m */; };
 		192A3F0C1FE60BE100C09049 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192A3F0A1FE60BE100C09049 /* Main.storyboard */; };
 		192A3F0E1FE60BE100C09049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 192A3F0D1FE60BE100C09049 /* Assets.xcassets */; };
 		192A3F111FE60BE100C09049 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192A3F0F1FE60BE100C09049 /* LaunchScreen.storyboard */; };
 		192A3F141FE60BE100C09049 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 192A3F131FE60BE100C09049 /* main.m */; };
 		192A3F1E1FE60BE100C09049 /* MyCounterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 192A3F1D1FE60BE100C09049 /* MyCounterTests.m */; };
 		192A3F291FE60BE100C09049 /* MyCounterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 192A3F281FE60BE100C09049 /* MyCounterUITests.m */; };
+		192A3F391FE60CD200C09049 /* CounterPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 192A3F381FE60CD200C09049 /* CounterPresenter.m */; };
+		192A3F3C1FE60CE800C09049 /* CounterInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 192A3F3B1FE60CE800C09049 /* CounterInteractor.m */; };
+		192A3F461FE611CF00C09049 /* CounterWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 192A3F451FE611CF00C09049 /* CounterWireFrame.m */; };
+		192A3F4A1FE6404F00C09049 /* AppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 192A3F491FE6404F00C09049 /* AppDependencies.m */; };
+		192A3F4D1FE655F800C09049 /* RootWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 192A3F4C1FE655F800C09049 /* RootWireFrame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +43,8 @@
 		192A3F011FE60BE100C09049 /* MyCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		192A3F041FE60BE100C09049 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		192A3F051FE60BE100C09049 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		192A3F071FE60BE100C09049 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		192A3F081FE60BE100C09049 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		192A3F071FE60BE100C09049 /* CounterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CounterViewController.h; sourceTree = "<group>"; };
+		192A3F081FE60BE100C09049 /* CounterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CounterViewController.m; sourceTree = "<group>"; };
 		192A3F0B1FE60BE100C09049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		192A3F0D1FE60BE100C09049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		192A3F101FE60BE100C09049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +56,17 @@
 		192A3F241FE60BE100C09049 /* MyCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		192A3F281FE60BE100C09049 /* MyCounterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCounterUITests.m; sourceTree = "<group>"; };
 		192A3F2A1FE60BE100C09049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		192A3F371FE60CD200C09049 /* CounterPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CounterPresenter.h; sourceTree = "<group>"; };
+		192A3F381FE60CD200C09049 /* CounterPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CounterPresenter.m; sourceTree = "<group>"; };
+		192A3F3A1FE60CE800C09049 /* CounterInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CounterInteractor.h; sourceTree = "<group>"; };
+		192A3F3B1FE60CE800C09049 /* CounterInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CounterInteractor.m; sourceTree = "<group>"; };
+		192A3F441FE611CF00C09049 /* CounterWireFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CounterWireFrame.h; sourceTree = "<group>"; };
+		192A3F451FE611CF00C09049 /* CounterWireFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CounterWireFrame.m; sourceTree = "<group>"; };
+		192A3F471FE614BD00C09049 /* CounterProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CounterProtocols.h; sourceTree = "<group>"; };
+		192A3F481FE6404F00C09049 /* AppDependencies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDependencies.h; sourceTree = "<group>"; };
+		192A3F491FE6404F00C09049 /* AppDependencies.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDependencies.m; sourceTree = "<group>"; };
+		192A3F4B1FE655F800C09049 /* RootWireFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootWireFrame.h; sourceTree = "<group>"; };
+		192A3F4C1FE655F800C09049 /* RootWireFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootWireFrame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +117,13 @@
 		192A3F031FE60BE100C09049 /* MyCounter */ = {
 			isa = PBXGroup;
 			children = (
+				192A3F3D1FE60CFC00C09049 /* Classes */,
 				192A3F041FE60BE100C09049 /* AppDelegate.h */,
 				192A3F051FE60BE100C09049 /* AppDelegate.m */,
-				192A3F071FE60BE100C09049 /* ViewController.h */,
-				192A3F081FE60BE100C09049 /* ViewController.m */,
+				192A3F481FE6404F00C09049 /* AppDependencies.h */,
+				192A3F491FE6404F00C09049 /* AppDependencies.m */,
+				192A3F4B1FE655F800C09049 /* RootWireFrame.h */,
+				192A3F4C1FE655F800C09049 /* RootWireFrame.m */,
 				192A3F0A1FE60BE100C09049 /* Main.storyboard */,
 				192A3F0D1FE60BE100C09049 /* Assets.xcassets */,
 				192A3F0F1FE60BE100C09049 /* LaunchScreen.storyboard */,
@@ -130,6 +149,22 @@
 				192A3F2A1FE60BE100C09049 /* Info.plist */,
 			);
 			path = MyCounterUITests;
+			sourceTree = "<group>";
+		};
+		192A3F3D1FE60CFC00C09049 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				192A3F371FE60CD200C09049 /* CounterPresenter.h */,
+				192A3F381FE60CD200C09049 /* CounterPresenter.m */,
+				192A3F3A1FE60CE800C09049 /* CounterInteractor.h */,
+				192A3F3B1FE60CE800C09049 /* CounterInteractor.m */,
+				192A3F071FE60BE100C09049 /* CounterViewController.h */,
+				192A3F081FE60BE100C09049 /* CounterViewController.m */,
+				192A3F441FE611CF00C09049 /* CounterWireFrame.h */,
+				192A3F451FE611CF00C09049 /* CounterWireFrame.m */,
+				192A3F471FE614BD00C09049 /* CounterProtocols.h */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +300,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				192A3F091FE60BE100C09049 /* ViewController.m in Sources */,
+				192A3F4D1FE655F800C09049 /* RootWireFrame.m in Sources */,
+				192A3F091FE60BE100C09049 /* CounterViewController.m in Sources */,
+				192A3F391FE60CD200C09049 /* CounterPresenter.m in Sources */,
+				192A3F3C1FE60CE800C09049 /* CounterInteractor.m in Sources */,
 				192A3F141FE60BE100C09049 /* main.m in Sources */,
+				192A3F461FE611CF00C09049 /* CounterWireFrame.m in Sources */,
 				192A3F061FE60BE100C09049 /* AppDelegate.m in Sources */,
+				192A3F4A1FE6404F00C09049 /* AppDependencies.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
